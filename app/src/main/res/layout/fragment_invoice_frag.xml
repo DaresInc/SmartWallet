@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.dares.mhanif.wallet.bill_fragment">
+    tools:context="com.dares.mhanif.wallet.invoice_frag">
 
     <!-- Update blank fragment layout -->
     <LinearLayout
@@ -22,10 +21,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="date"
             android:ems="10"
-            android:id="@+id/editText2"
-            android:hint="Qty" />
+            android:id="@+id/create_date"
+            android:hint="Create Date" />
 
         <LinearLayout
             android:orientation="horizontal"

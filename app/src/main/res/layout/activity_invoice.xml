@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invoice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dares.mhanif.wallet.invoice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            style="@android:style/Widget.DeviceDefault.Light.TextView"
+            android:textAlignment="center"
+            android:background="@color/colorAccent"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:theme="@style/AppTheme" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/itemDescription"
+            android:layout_weight="1"
+            android:hint="Item Description" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/unitPrice"
+            android:layout_weight="1"
+            android:hint="Unit Price" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/qty"
+            android:layout_weight="1"
+            android:hint="Quantity" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cancel_btn"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Button" />
+
+            <Button
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_btn"
+                android:layout_weight="1"
+                style="@android:style/Widget.Holo.Button" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_data"
+            android:hint="No Data Found." />
+
+        <Button
+            android:id="@+id/bt_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Go Back"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+</RelativeLayout>
